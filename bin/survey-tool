@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+$:.unshift File.join(__FILE__, '..', '..', 'lib')
+
+ENV['SURVEY_ENV'] = 'development'
+
+require 'boot'
+
+require 'application'
+
+Application.new.cli

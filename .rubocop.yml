@@ -1,0 +1,25 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - 'lib/db_setup.rb'
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/ClassLength:
+  Max: 100
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/MethodLength:
+  Max: 20 # Default 10, increase due to often multiline Hash/Json generation
+
+Metrics/BlockLength:
+  Max: 20
+  Exclude:
+    - 'spec/**/*'
