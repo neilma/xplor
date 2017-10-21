@@ -20,13 +20,7 @@ ActiveRecord::Schema.define do
     table.column :submitted_at, :datetime
     table.column :value, :text
     table.column :question_id, :integer
-    table.column :response_id, :integer
-  end
-
-  create_table :responses do |table|
     table.column :participant_id, :integer
-    table.column :submitted_at, :datetime
-    table.column :survey_id, :integer
   end
 
   create_table :participants do |table|
